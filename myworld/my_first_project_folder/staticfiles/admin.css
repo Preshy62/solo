@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#check {
+    display: none;
+}
+
+.menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: green;
+    height: 100vh;
+    width: 50px;
+    padding: 0 20px;
+    transition: all 0.5s;
+}
+
+.menu-bar:hover {
+    width: 250px;
+    transition: 0.8s;
+}
+
+/* Add this CSS to properly hide sidebar text */
+.menu-bar ul li {
+    overflow: hidden; /* Ensure text overflow is hidden */
+    white-space: nowrap; /* Prevent text from wrapping */
+    width: 0; /* Initially hide the text */
+    transition: width 0.3s; /* Smooth transition when sidebar expands */
+}
+
+.menu-bar:hover ul li {
+    width: auto; /* Show text when sidebar is expanded */
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.logo {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.menu-bar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-bar ul li {
+    padding: 15px 10px;
+    margin: 5px 0;
+    transition: background 0.3s;
+}
+
+.menu-bar ul li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-bar ul li:hover {
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+.menu-bar ul li a span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.menu-bar ul i {
+    font-size: 20px;
+}
+
+.signout {
+    margin-top: auto;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.content-main {
+    flex: 1;
+    padding: 20px;
+    background-image: url(./images/greenbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 70px; /* Adjust for sidebar width */
+    transition: margin-left 0.5s;
+}
+
+.menu-bar:hover ~ .content-main {
+    margin-left: 250px; /* Adjust for sidebar width when expanded */
+}
+
+.profile-img img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    background-color: maroon;
+    padding: 5px 20px;
+    border-radius: 10px;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    box-shadow: 5px 10px 10px 5px red;
+    background-color: transparent;
+}
+
+.header-title h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.header-title span {
+    color: black;
+    font-size: 15px;
+    letter-spacing: 4px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.searchbox {
+    position: relative;
+}
+
+.searchbox input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 10px;
+}
+
+.searchbox button {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.card-container {
+    width: 90%;
+    margin: 15px auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 red;
+}
+
+.card-container h1 {
+    color: white;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.card-student {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 5px 10px 10px 5px red;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon i {
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+}
+
+.green {
+    background-color: green;
+    border-radius: 50%;
+}
+
+.pink {
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.orange {
+    background-color: maroon;
+    border-radius: 50%;
+}
+
+.card-student span {
+    color: black;
+    font-size: 16px;
+}
+
+.details-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.requests {
+    background-color: transparent;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 red;
+}
+
+.requests-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+}
+
+.requests-header p {
+    font-size: 20px;
+}
+
+.requests-header span {
+    cursor: pointer;
+}
+
+.container-l {
+    margin-top: 20px;
+}
+
+.container-l h3 {
+    color: black;
+}
+
+.container-l hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: black;
+}
+
+.date span {
+    display: flex;
+    align-items: center;
+}
+
+.date span p {
+    margin-left: 10px;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.chart img {
+    width: 48%;
+}
+
+/*... (rest of the CSS code remains the same) */
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column; /* Stack content in a column */
+        margin: 0; /* Remove default margin */
+    }
+
+    .menu-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: green;
+        width: 100%; /* Take full width */
+        height: 70px; /* Adjust height as needed */
+        padding: 20px; /* Adjust padding as needed */
+        z-index: 1000; /* Ensure sidebar stays on top of other content */
+        transition: all 0.5s;
+    }
+
+    .menu-bar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-bar ul li {
+        padding: 15px 10px;
+        transition: background 0.3s;
+        width: 100%; /* Take full width */
+    }
+
+    .menu-bar ul li a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-bar ul li a.icon {
+        display: inline-block; /* Show icons within sidebar items */
+    }
+
+    .header-main {
+        position: fixed;
+        top: 70px; /* Adjust for the height of the menu-bar */
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .content-main {
+        margin-top: 150px; /* Adjust for the height of the header */
+        padding: 20px;
+    }
+
+    .card-student {
+        display: flex;
+        flex-direction: column;
+        width: 40%; /* Ensure student cards take 40% width */
+        margin-bottom: 20px; /* Optional: Add margin between cards */
+    }
+
+    .menu-bar ul li {
+        white-space: normal; /* Allow text to wrap */
+    }
+}

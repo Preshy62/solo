@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dbb856c26c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'farmerssignup.css' %}">
+    <title>sign up</title>
+</head>
+<body>
+ <div class="container">
+        <div class="form">
+            <h1>Sign Up</h1>
+            <form id="farmerssignup" action="/dashboard.html" method="get">
+                <label for="fullName">Full Name</label><br>
+                <input type="text" id="fullName" class="form-control" placeholder="Jonny Ben" required><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" class="form-control" placeholder="**********" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" class="form-control" placeholder="Precious....@yahoo.com" required><br>
+                <label for="contactAddress">Contact Address</label><br>
+                <input type="text" id="contactAddress" class="form-control" placeholder="no2******" required><br>
+                <label for="businessLocation">Business Location</label><br>
+                <input type="text" id="businessLocation" class="form-control" placeholder="**********" required><br>
+                <label for="phoneNumber">Phone Number</label><br>
+                <input type="tel" id="phoneNumber" class="form-control" placeholder="+01-08282972" required><br>
+                <label for="gender">Gender</label><br>
+                <input type="text" id="gender" class="form-control" placeholder="Gender" required><br>
+                <label for="age">Age</label><br>
+                <input type="text" id="age" class="form-control" placeholder="Age" required><br><br>
+                <button type="submit">Complete</button><br><br>
+            </form>
+            <p class="line">Or sign up with</p><br><br>
+            <div class="socials">
+                <a href="#"><span><i class="fa-brands fa-google"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-facebook"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-x-twitter"></i></span></a><br><br>
+            </div>
+            <h2>Already have an account? <a href="/login.html">Sign-in</a></h2><br>
+        </div>
+    </div>
+    <script>
+        document.getElementById('farmerssignup').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = '/dashboard.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dbb856c26c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <title>signup</title>
+</head>
+<body>
+    <div class="container">
+
+    
+
+    <div class="form">
+
+        <h1>LOGIN</h1>
+
+        <form id="login" action="./home.html" method="get">
+
+
+        <label class="pass" for="Password">Full Name</label><br>
+        <input type="text" placeholder="**********" required><br>
+        <label for="Re-Password">Password</label><br>
+        <input type="text" placeholder="**********" required><br><br>
+        
+        <a href="./home.html"><button type="submit">Complete</button><br><br></a>
+    </form>
+
+    <br>
+
+    <p class="or">Or sign up with</p><br>
+
+    <div class="socials">
+        <a href="http://"><span><i class="fa-brands fa-google"></i></span></a>
+        <a href="http://"><span><i class="fa-brands fa-facebook"></i></span></a>
+        <a href="http://"><span><i class="fa-brands fa-x-twitter"></i></span></a><br>
+    </div>
+
+
+   </div>
+
+
+
+    </div>
+    <script>
+        document.getElementById('login').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = '/home.html';
+        });
+    </script>
+
+</body>
+</html>

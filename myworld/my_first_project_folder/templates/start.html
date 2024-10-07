@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing</title>
+    <link rel="stylesheet" href="{% static "landing.css" %}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>welcome to ElohAgro MarketPlace</h1>
+        <p><em>Making Farming Easier.</em></p>
+
+     <a href="{% url 'farmerssignup' %}">Farmers signup</a>
+        <a href="{% url 'signup' %}">Individual signUp</a><br><br><br>
+        <a href="{% url 'login' %}">Log In</a> 
+    </div>
+    
+</body>
+</html>

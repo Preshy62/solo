@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(45deg, #ffff 0%, black 100%);
+    margin-top: 50px;
+}
+
+.form {
+    text-align: center;
+    background: white;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 45%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    text-indent: 30px;
+    outline: none;
+}
+
+input[type="email"] {
+    width: 45%;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    text-indent: 30px;
+    outline: none;
+}
+
+input[type="password"] {
+    width: 45%;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    text-indent: 30px;
+    outline: none;
+}
+
+input[type="tel"] {
+    width: 45%;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    text-indent: 30px;
+    outline: none;
+}
+
+label {
+    font-size: 18px;
+}
+
+.socials {
+    padding: 10px;
+}
+
+.socials a {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.socials a:nth-child(3) {
+    background: black;
+    color: white;
+}
+
+.socials a:nth-child(2) {
+    background: dodgerblue;
+    color: white;
+}
+
+.socials a:nth-child(1) {
+    background: red;
+    color: white;
+}
+
+.line {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 1px;
+    color: dodgerblue;
+    margin: auto;
+}
+
+.line::before,.line::after {
+    content: "";
+    padding: 0.69px;
+    background-color: dodgerblue;
+    flex: 1;
+}
+
+button {
+    padding: 8px;
+    width: 20%;
+    border-radius: 10px;
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.socials {
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* For screens with a maximum width of 768px (tablets and smaller) */
+@media only screen and (max-width: 768px) {
+   .form {
+        width: 80%;
+    }
+    input[type="text"], input[type="email"], input[type="tel"] {
+        width: 80%;
+    }
+    button {
+        width: 40%;
+    }
+}
+
+/* For screens with a maximum width of 480px (mobile devices) */
+@media only screen and (max-width: 480px) {
+   .form {
+        width: 90%;
+    }
+    input[type="text"], input[type="email"], input[type="tel"] {
+        width: 90%;
+    }
+    button {
+        width: 60%;
+    }
+}

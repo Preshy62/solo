@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard student-portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static './dashboard.css' %}">
+</head>
+<body style="background-image: url(./images/bgg1.jpg);
+background-repeat: no-repeat;
+background-size: cover;">
+    
+<div class="menue-bar">
+
+    
+    <input type="checkbox" name="" id="check"><label for="check">
+        <span class="menu-bar"><i class="fa-solid fa-bars"></i></span></label>
+    
+    
+<div class="logo"> 
+
+<img src="{% static './imag/images/IMG-20240512-WA0002_1.jpg' %}" alt="">
+
+</div>
+
+
+
+<ul>
+
+    <li><a href="{% url 'index' %}">
+
+        <i class="fa-solid fa-gauge"></i> 
+
+<span>Home</span>
+
+    </a>
+    
+    
+    
+    </li>
+
+    <li><a href="{% url 'market' %}">
+
+        <i class="fa-solid fa-store"></i>
+
+ <span>Farm Market</span>
+
+    </a>
+    
+    
+    
+    </li>
+
+    <li><a href="{% url 'chem' %}">
+        <i class="fa-solid fa-store"></i>
+ <span>Agro-chem</span>
+    </a>
+    
+    
+    
+    </li>
+
+    <li><a href="{% url 'farm' %}">
+        <i class="fa-solid fa-land-mine-on"></i>
+ <span>Farm Lands</span>
+    </a>
+    
+    
+    
+    </li>
+
+
+
+    
+    
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="signout"><a href="./index.html">
+    <i class="fa-solid fa-right-from-bracket"></i> 
+<span>Sign out</span>
+</a>
+
+
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+<!-- the menue ends here -->
+
+<div class="content-main">
+   
+
+<div class="header-main">
+
+   <div class="header-title">
+
+<spam>Welcome</spam>
+
+<h1>farmers Portal</h1>
+
+   </div>
+   
+   <div class="profile-info">
+
+<div class="searchbox">
+
+<input type="text" name="" id="" placeholder="search">
+<button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+</div>
+
+
+<div class="profile-img">
+<a href=""><img src="{% static './images/tes.jpg' %}" alt=""></a>
+
+    
+</div>
+
+
+   </div>
+
+
+</div>
+
+<div class="card-container">
+
+<h1>ElohAgro Farmers</h1>
+
+<div class="card-flex">
+
+
+
+
+
+<div class="card-student">
+
+    <div class="card-hearder">
+    
+    <div class="passcode-info">
+    
+    <span class="pass">FARM PRODUCTS</span>
+    <span class="passcode-value">30%</span>
+    
+    </div>
+    
+    <span class="icon green" ><i class="fa-solid fa-star"></i> </span>
+    
+    </div>
+    
+    <span style="color: green;">5% Of profit deduction</span>
+    
+    </div>
+
+
+
+    <div class="card-student">
+
+        <div class="card-hearder">
+        
+        <div class="passcode-info">
+        
+        <span class="pass">FARM LAND</span>
+        <span class="passcode-value">10%</span>
+        
+        </div>
+        
+        <span class="icon pink" ><i class="fa-solid fa-user-group"></i></span>
+        
+        </div>
+        
+        <span style="color: green;" >10% of profit deduction</span>
+        
+        </div>
+
+
+
+        <div class="card-student">
+
+            <div class="card-hearder">
+            
+            <div class="passcode-info">
+            
+            <span class="pass">AGRO-CHEMICALS</span>
+            <span class="passcode-value">3%</span>
+            
+            </div>
+            
+            <span class="icon orange"><i class="fa-solid fa-clipboard-check"></i></span>
+            
+            </div>
+            
+            <span style="color: green;">3% Of profit</span>
+            
+       
+        </div> 
+
+</div>
+
+</div>
+
+
+
+
+<!-- Upcoming Classes starts here -->
+
+
+<div class="head-p" style="color: white; " >
+
+    <p>SALES</p>
+    <span>See all <i class="fa-solid fa-arrow-right  baby"></i></span>
+
+  </div>
+
+  <div class="container-l">
+    
+     
+      
+        <h3>Sales <span>Recorded</span></h3>
+        
+
+        <hr>
+
+        
+
+        <div class="date">
+          <span><i class="fa-solid fa-calendar-week  baby"></i> <p>09th jan- 17th July</p></span>
+          <span><i class="fa-solid fa-clock  baby"></i><p>09.00 - 10.30 AM</p></span>
+          <h4>Total=#10.6milion</h4>
+        </div>
+
+       
+     
+
+      
+    
+  </div>
+
+
+
+
+  <div class="container-l">
+    
+     
+      
+    <h3>Profit<span>Recorded</span></h3>
+    
+
+    <hr>
+
+    
+
+    <div class="date">
+      <span><i class="fa-solid fa-calendar-week"></i> <p>10th jan-27th July</p></span>
+      <span><i class="fa-solid fa-clock"></i><p>02.00 - 03.30 PM</p></span>
+<h4>Total=#3.6milion</h4>
+    </div>
+
+
+  
+
+  
+
+</div>
+ 
+
+<!-- my course countainer ends here -->
+
+<div class="my-course" style="background: transparent; color: white;">
+
+    <h1>Products</h1>
+
+    <div class="course-flex">
+
+<div class="course1">
+    <div class="course-img xyz">
+
+<span><img src="{% static './imag/images/farm1.jpg' %}" alt=""></span>
+</div>
+<button class="custom-button"><P style="color: black; ">Farm Land</P></button>
+
+<div class="underline">
+    <span style="background:green !important; width: 30%;"></span>
+    26%
+
+ </div> 
+ 
+ 
+
+<!-- <a href="http://"  class="bus ">Continue</a>  -->
+
+</div>
+
+
+<div class="course2">
+
+    <div class="course-img">
+
+    <span><img src="{% static './imag/images/strawberries-1835934_640.jpg' %}" alt="" ></span>
+    
+    </div>
+   <button class="custom-button"><P style="color: black;">Farm products</P></button>
+    
+    <div class="underline">
+        <span style="background: green !important; width: 40%;"></span>
+        46%
+     </div> 
+    
+     
+<!--     
+    <a href="https"  class="bus">Continue</a>  -->
+    
+    </div>
+
+
+    <div class="course3">
+
+        <div class="course-img">
+
+        <span><img src="{% static './imag/images/chem1.jpg' %}" alt=""></span>
+        
+        </div>
+
+      <button class="custom-button">  <P style="color:black;">AGRO-CHEMICALS</P></button>
+
+        <div class="underline">
+            <span style="background: lightgreen !important; width: 60%;"></span>
+           76%
+         </div> 
+       <!-- <a href="https"  class="bus">Continue</a>  -->
+        
+        </div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
